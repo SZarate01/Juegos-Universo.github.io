@@ -73,6 +73,8 @@ body {
     border: none;
     color: #4adc9c;
     font-size: 1.9em;
+    background-color: black;
+    cursor: pointer;
 }
 
 .menu2 nav {
@@ -101,6 +103,7 @@ body {
     font-size: 1.9em;
     background-color: #4adc9c;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 #dialog-overlay {
@@ -143,12 +146,4 @@ body {
 .dialog-box button {
     display: block;
     margin-top: 10px;
-}
-
-#close-dialog {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
 }
