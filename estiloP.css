@@ -12,18 +12,18 @@ body {
 }
 
 .container__header {
-    display: absolute;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    display: absolute;
-    align-items: top;   
+    display: flex;
+    align-items: center;
 }
-    
+
 .menu nav {
-    display: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -37,28 +37,27 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding: 10px;
     padding-right: 10px;
 }
- 
-.menu nav ul li a{
+
+.menu nav ul li a {
     display: inline-block;
-    margin-right: 0px;
+    margin-right: 10px;
     padding: 20px;
     border: 1px;
     color: #4adc9c;
-    font-size: 190%;
+    font-size: 1.9em;
 }
 
 .menu1 nav {
-    display: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 30px;
     right: -10px;
     transform: translateX(-160%);
-}  
+}
 
 .menu1 nav ul {
     display: flex;
@@ -66,25 +65,25 @@ body {
     margin: 0;
     padding: 0;
 }
- 
-.menu1 nav ul li a{
+
+.menu1 nav ul li button {
     display: inline-block;
     margin-right: 0px;
     padding: 20px;
-    border: 1px;
+    border: none;
     color: #4adc9c;
-    font-size: 190%;
+    font-size: 1.9em;
 }
 
 .menu2 nav {
-    display: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 30px;
     right: -200px;
     transform: translateX(-160%);
-}  
+}
 
 .menu2 nav ul {
     display: flex;
@@ -92,33 +91,64 @@ body {
     margin: 0;
     padding: 0;
 }
- 
-.menu2 nav ul li a{
+
+.menu2 nav ul li button {
     display: inline-block;
     margin-right: 0px;
     padding: 20px;
-    border: 1px;
-    color: black;
-    font-size: 190%;
+    border: none;
+    color: white;
+    font-size: 1.9em;
     background-color: #4adc9c;
     border-radius: 100px;
 }
 
-.menu3 nav ul {
-    list-style: none;
+#dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: none;
 }
 
-.menu3 nav ul li a{
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 100px;
-    position: relative;
-    top: 630px;
-    left: 270px;
-    background-color: #4adc9c;
-    border-radius: 100px;
+.dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
     padding: 20px;
-    color: black;
-    font-size: 190%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+
+.dialog-box h2 {
+    margin-top: 0;
+}
+
+.dialog-box label {
+    display: block;
+    margin-top: 10px;
+}
+
+.dialog-box input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dialog-box button {
+    display: block;
+    margin-top: 10px;
+}
+
+#close-dialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
