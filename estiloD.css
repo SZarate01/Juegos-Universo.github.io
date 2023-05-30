@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: #4adc9c;
+}
+
+#logo1 {
+    width: 250px;
+    height: 157px;
+    left: 50px;
+    top: 20px;
+    position: absolute;
+}
+
+#JuegoR {
+    position: relative;
+    width: 350px;
+    top: -57px;
+    left: 250px;
+}
+
+#JuegoM {
+    position: relative;
+    width: 300px;
+    left: 650px;
+}
+
+#ConsolaM {
+    position: absolute;
+    left: 800px;
+}
+
+#ConsolaA {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    left: 200px;
+}
+
+#Servicio {
+    position: absolute;
+    height: 250px;
+    left: 100px;
+}
+
+#Perifericos {
+    position: absolute;
+    height: 250px;
+    left: 600px;
+}
+
+#Reloj {
+    position: absolute;
+    height: 250px;
+    left: 1250px;
+}
+
+.container__header {
+    display: absolute;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: absolute;
+    align-items: top;
+}
+
+.menu nav {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 300px;
+    transform: translateX(-160%);
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    padding-right: 10px;
+}
+ 
+.menu nav ul li a{
+    display: inline-block;
+    margin-right: 0px;
+    padding: 20px;
+    border: 1px;
+    color: #4adc9c;
+    font-size: 190%;
+}
+
+.menu1 nav {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    transform: translateX(-160%);
+}  
+
+.menu1 nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.menu1 nav ul li a{
+    display: inline-block;
+    margin-right: 0px;
+    padding: 20px;
+    border: 1px;
+    color: #4adc9c;
+    font-size: 190%;
+}
+
+.menu2 nav {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: -200px;
+    transform: translateX(-160%);
+}  
+
+.menu2 nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.menu2 nav ul li a{
+    display: inline-block;
+    margin-right: 0px;
+    padding: 20px;
+    border: 1px;
+    color: black;
+    font-size: 190%;
+    background-color: #4adc9c;
+    border-radius: 100px;
+}
+
+.text-container {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    position: relative;
+    top: 200px;
+    color: white;
+}
+
+.text-container1 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    position: relative;
+    top: 200px;
+    color: white;
+}
+
+.text-container1 ul {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
