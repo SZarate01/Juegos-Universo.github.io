@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
     <link rel="stylesheet" href="estiloC.css">
+    <script src="cookies.js"></script>
 </head>
 <body>
     <header>
@@ -24,17 +25,18 @@
                     </ul>
                 </nav>
             </div>
-            <div class="menu1">
+            <div class="botones">
+                <div class="menu1">
                 <nav>
                     <ul>
-                      <li><a href="#">Iniciar sesión</a></li>
+                        <li><button type="button" onclick="iniciarSesion()">Iniciar sesión</button></li>
                     </ul>
                 </nav>
             </div>
             <div class="menu2">
                 <nav>
                     <ul>
-                        <li><a href="#">Registrarse</a></li>
+                        <li><button type="button" onclick="registrarse()">Registrarse</button></li>
                     </ul>
                 </nav>
             </div>
@@ -46,17 +48,23 @@
         <p>¿Tienes preguntas sobre nuestra modalidad? ¿No estás seguro de qué comprar?</p>
         <p>¿Hay algún producto que no esté en tu presupuesto? ¡Contáctanos! Estaremos encantados de llegar a un acuerdo contigo.</p>
     </div>
-    <div class="input-container">
-        <label for="email">Su correo electrónico:</label>
-        <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+    <div class="centered-container">
+        <div class="input-container">
+            <label for="email">Su correo electrónico:</label>
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+        </div>
+    
+        <div class="input-container1">
+            <label for="phone">Su número de teléfono:</label>
+            <input type="text" id="phone" placeholder="Ingrese su número de teléfono">
+        </div>
+        <div class="botonEnviar">
+            <button onclick="validateEmail()">Enviar</button>
+        </div>
+        <div>
+            <h2>Despues de ingresar un correo valido, pulse "Enviar" y nosotros nos contactaremos con usted en horas habiles.</h2>
+        </div>
     </div>
-
-    <div class="input-container">
-        <label for="phone">Su número de teléfono:</label>
-        <input type="text" id="phone" placeholder="Ingrese su número de teléfono">
-    </div>
-
-    <button onclick="validateEmail()">Enviar</button>
 </div>
 
 <script>
@@ -72,5 +80,8 @@
         }
     }
 </script>
+<div id="dialog-overlay"></div>
+<script src="scriptIniciarSesion.js"></script>
+<script src="scriptRegistrarse.js"></script>
 </body>
 </html>

@@ -43,6 +43,7 @@ function autenticar() {
     if (usuarioEncontrado) {
         mostrarMensajeEmergente("¡Inicio de sesión exitoso!");
         isLoggedIn = true;
+        setCookie("isLoggedIn", "true", 7);
         hideLoginButtons();
     } else {
         mostrarMensajeEmergente("Fallo en el inicio de sesión, revisa que el correo o contraseña estén bien escritos e inténtalo nuevamente.");

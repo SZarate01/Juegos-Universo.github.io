@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos Universo</title>
     <link rel="stylesheet"href="style.css">
+    <script src="cookies.js"></script>
 </head>
 <body>
     <header>
@@ -24,19 +25,21 @@
                     </ul>
                 </nav>
             </div>
-            <div class="menu1">
-                <nav>
-                    <ul>
-                      <li><a href="#">Iniciar sesión</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="menu2">
-                <nav>
-                    <ul>
-                        <li><a href="#">Registrarse</a></li>
-                    </ul>
-                </nav>
+            <div class="botones">
+                <div class="menu1">
+                    <nav>
+                        <ul>
+                            <li><button type="button" onclick="iniciarSesion()">Iniciar sesión</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu2">
+                    <nav>
+                        <ul>
+                            <li><button type="button" onclick="registrarse()">Registrarse</button></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="menu3">
                 <nav>
@@ -54,7 +57,9 @@
     <h3>Tu pagina de confianza para la compra y venta de videojuegos físicos.</h3>
     <h4>¡Ven y juguemos!</h4>
 
-<script src="script.js"></script>
+<div id="dialog-overlay"></div>
+<script src="scriptIniciarSesion.js"></script>
+<script src="scriptRegistrarse.js"></script>
 
 </body>
 </html>

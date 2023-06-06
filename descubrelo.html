@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descubrelo</title>
     <link rel="stylesheet"href="estiloD.css">
+    <script src="cookies.js"></script>
 </head>
 <body>
     <header id="miheader">
@@ -24,17 +25,18 @@
                     </ul>
                 </nav>
             </div>
-            <div class="menu1">
+            <div class="botones">
+                <div class="menu1">
                 <nav>
                     <ul>
-                      <li><a href="#">Iniciar sesión</a></li>
+                        <li><button type="button" onclick="iniciarSesion()">Iniciar sesión</button></li>
                     </ul>
                 </nav>
             </div>
             <div class="menu2">
                 <nav>
                     <ul>
-                        <li><a href="#">Registrarse</a></li>
+                        <li><button type="button" onclick="registrarse()">Registrarse</button></li>
                     </ul>
                 </nav>
             </div>
@@ -62,5 +64,8 @@
         <img src="perifericos.png" alt="Imagen de perifericos" id="Perifericos">
         <img src="reloj.png" alt="Imagen de reloj" id="Reloj">
       </div>
+<div id="dialog-overlay"></div>
+<script src="scriptIniciarSesion.js"></script>
+<script src="scriptRegistrarse.js"></script>
 </body>
 </html>
