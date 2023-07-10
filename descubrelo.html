@@ -7,6 +7,9 @@
     <title>Descubrelo</title>
     <link rel="stylesheet"href="estiloD.css">
     <script src="cookies.js"></script>
+    <link rel="stylesheet" type="text/css" href="ruta/slick/slick.css"/>
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
 </head>
 <body>
     <header id="miheader">
@@ -44,26 +47,35 @@
     <div class="text-container">
         <h2>Ofrecemos todo tipo de juegos, desde los más antiguos a los más nuevos</h2>
         <p>En Juegos Universo, contamos con una amplia selección de juegos que abarcan desde los clásicos hasta los más recientes. ¡Encuentra tu juego favorito!</p>
-        <img src="retro.png" alt="Imagen de juego retro" id="JuegoR">
-        <img src="juegoM.png" alt="Imagen de juego moderno" id="JuegoM">
+        <div class="carousel juegos-carousel">
+          <div><img src="retro.png" alt="Imagen 1"></div>
+          <div><img src="juegoM.png" alt="Imagen 2"></div>
+        </div>
       </div>
+      
       <div class="text-container">
         <h2>Ofrecemos todo tipo de consolas, desde la antigua Atari hasta el más nuevo Xbox Series X</h2>
         <p>Además de juegos, también ofrecemos una gran variedad de consolas de videojuegos, desde las clásicas hasta las más modernas. ¡Encuentra la tuya!</p>
-        <img src="consolas.png" alt="Imagen de consola antigua" id="ConsolaA">
-        <img src="consolaModerna.png" alt="Imagen de consola moderna" id="ConsolaM">
+        <div class="carousel consolas-carousel">
+          <div><img src="consolaModerna.png" alt="Consola 1"></div>
+          <div><img src="consolas.png" alt="Consola 2"></div>
+        </div>
       </div>
-      <div class="text-container1">
+      
+      <div class="text-container">
         <h2>En Juegos Universo hay:</h2>
         <ul>
           <li>Rápida atención al cliente</li>
           <li>Múltiples cosas relacionadas a los videojuegos</li>
-          <li>Entregas en tiempo record a domicilio</li>
+          <li>Entregas en tiempo récord a domicilio</li>
         </ul>
-        <img src="servicio.png" alt="Imagen de servicio al cliente" id="Servicio">
-        <img src="perifericos.png" alt="Imagen de perifericos" id="Perifericos">
-        <img src="reloj.png" alt="Imagen de reloj" id="Reloj">
+        <div class="carousel servicios-carousel">
+          <div><img src="servicio.png" alt="Servicio al cliente"></div>
+          <div><img src="perifericos.png" alt="Periféricos"></div>
+          <div><img src="reloj.png" alt="Reloj"></div>
+        </div>
       </div>
+      
 <div id="dialog-overlay"></div>
 <script src="scriptIniciarSesion.js"></script>
 <script src="scriptRegistrarse.js"></script>

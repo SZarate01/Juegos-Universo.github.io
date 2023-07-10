@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   function showProducts(category) {
     var products = [];
-
+  
     if (category === 'pc') {
       products = [
         { image: 'tarjetas_RAM.png', text: 'Tarjetas RAM' },
@@ -28,45 +28,62 @@ document.addEventListener('DOMContentLoaded', function() {
       ];
     } else if (category === 'playstation') {
       products = [
-        { image: 'producto_ps1.png', text: 'Producto PlayStation 1' },
-        { image: 'producto_ps2.png', text: 'Producto PlayStation 2' },
-        { image: 'producto_ps3.png', text: 'Producto PlayStation 3' }
+        { image: 'nodisponible.png', text: 'Capturadoras' },
+        { image: 'nodisponible.png', text: 'Juegos' },
+        { image: 'nodisponible.png', text: 'Repuestos' },
+        { image: 'nodisponible.png', text: 'Mandos' },
+        { image: 'nodisponible.png', text: 'Almacenamiento' },
+        { image: 'nodisponible.png', text: 'Limpiadores' }
       ];
     } else if (category === 'xbox') {
       products = [
-        { image: 'producto_xbox1.png', text: 'Producto Xbox 1' },
-        { image: 'producto_xbox2.png', text: 'Producto Xbox 2' },
-        { image: 'producto_xbox3.png', text: 'Producto Xbox 3' }
+        { image: 'nodisponible.png', text: 'Capturadoras' },
+        { image: 'nodisponible.png', text: 'Juegos' },
+        { image: 'nodisponible.png', text: 'Repuestos' },
+        { image: 'nodisponible.png', text: 'Mandos' },
+        { image: 'nodisponible.png', text: 'Almacenamiento' },
+        { image: 'nodisponible.png', text: 'Limpiadores' }
       ];
     } else if (category === 'nintendo') {
       products = [
-        { image: 'producto_nintendo1.png', text: 'Producto Nintendo 1' },
-        { image: 'producto_nintendo2.png', text: 'Producto Nintendo 2' },
-        { image: 'producto_nintendo3.png', text: 'Producto Nintendo 3' }
+        { image: 'nodisponible.png', text: 'Repuestos' },
+        { image: 'nodisponible.png', text: 'Juegos' },
+        { image: 'nodisponible.png', text: 'Capturadoras' },
+        { image: 'nodisponible.png', text: 'Consolas' },
+        { image: 'nodisponible.png', text: 'Joycons' },
+        { image: 'nodisponible.png', text: 'Amiibos' }
       ];
     } else if (category === 'mercancia') {
       products = [
-        { image: 'producto_mercancia1.png', text: 'Producto de Mercancía 1' },
-        { image: 'producto_mercancia2.png', text: 'Producto de Mercancía 2' },
-        { image: 'producto_mercancia3.png', text: 'Producto de Mercancía 3' }
+        { image: 'nodisponible.png', text: 'Figuras' },
+        { image: 'nodisponible.png', text: 'Gorros' },
+        { image: 'proximamente.png', text: 'Proximamente' },
+        { image: 'nodisponible.png', text: 'Camisas' },
+        { image: 'nodisponible.png', text: 'Polos' },
+        { image: 'nodisponible.png', text: 'Chaquetas'}
       ];
     }
-
+  
     productContainer.innerHTML = '';
-
+  
     var row = document.createElement('div');
     row.className = 'product-row';
-
+  
     for (var i = 0; i < products.length; i++) {
       var productBox = document.createElement('div');
       productBox.className = 'product-box';
-
+  
       var productImage = document.createElement('img');
       productImage.src = products[i].image;
-
+      productImage.classList.add('zoom-image');
+  
       var productText = document.createElement('div');
       productText.textContent = products[i].text;
-
+  
+      productImage.onclick = function() {
+        window.location.href = 'nueva_pagina.html';
+      };
+  
       if (i < 3) {
         row.appendChild(productBox);
       } else {
@@ -79,12 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         rowContainer.appendChild(productBox);
       }
-
+  
       productBox.appendChild(productImage);
       productBox.appendChild(productText);
     }
-
+  
     productContainer.appendChild(row);
-    
-  }
+  }  
 });
